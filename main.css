@@ -1,0 +1,674 @@
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.42;
+  background:#29292c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li{
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 1200px;
+}
+ 
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+}
+
+.main-page-wrapper{
+  background: url("./img/lion-header.jpg") center top no-repeat, url("./img/bottom-pic.png") right bottom 307px no-repeat;
+}
+
+.header {
+  padding-top: 25px;
+  margin-bottom: 30px;
+  margin-bottom: 156px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+.header__col--align--right {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: block;
+  margin-right: 100px;
+}
+
+.contacts {
+  font-style: normal;
+  text-align: right;
+}
+
+.contacts__desc {
+  color: #999;
+  font-size: 11px;
+}
+
+.menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+.menu__item--active .menu__link{
+  color: #dfb56d;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link { 
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #dfb56d;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.contacts__dropdown-title {
+  font-size: 13px;
+  text-decoration: underline;
+  color: #dfb56d;
+}
+
+.hero {
+  margin-bottom: 169px;
+}
+
+.hero__text-section {
+  width: 38%;
+
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  color: #dfb56d; 
+  margin-bottom: 44px;
+}
+
+.btn {
+  background: #dfb56d;
+  border-radius: 4px;
+  padding: 18px 39px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.btn--color--ginger{
+  background: #dfb56d;
+}
+
+.btn--color--ginger:hover {
+  background: #d3a556;
+  box-shadow: 0 0 25px 0 rgb(223, 181, 109, .15);
+}
+
+.btn--color--black{
+  background: #202123;
+}
+
+.btn--color--black:hover {
+  background: #000;
+  background: #d3a556; 
+}
+
+.section {
+  margin-bottom: 138px;
+}
+
+.section__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers__item {
+  width: calc(100% / 3 - 18px);
+}
+
+.offer {
+  min-height: 470px;
+  background: #fff;
+  border-radius: 4px;
+  color: #010001;
+  overflow: hidden;
+}
+
+.offer__item:last-child {
+  margin-right: 0;
+}
+
+.offer__item--theme--grey .offer__header:before {
+  background: #a5a5a4;
+}
+
+.offer__item--theme--blue .offer__header:before {
+  background: #556180;
+}
+
+.offer__item--theme--gold .offer__header:before {
+  background: #978455;
+}
+
+.offer__header {
+  min-height: 162px;
+  position: relative;
+}
+
+.offer__header:before {
+  content: "";
+  width: 284px;
+  height: 284px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -123px;
+  right: -91px;
+  background: #ccc;
+}
+
+.offer__header-img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -44px;
+  margin-top: -32px;
+}
+
+.offer__content {
+  padding: 36px 30px;
+  padding-top: 24px;
+  color: #010001;
+}
+
+.offer__title{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+
+.offer__prices-cell {
+  display: inline-block;
+  vertical-align: top;
+  width: 122px;
+  margin-right: 25px;
+}
+
+.offer__prices-cell:last-child {
+  margin-right: 0;
+}
+
+.offer__price {
+  font-size: 36px;
+}
+
+.offer__price--range {
+  font-size: 30px;
+}
+
+.offer__price-desc {
+  color: #333;
+}
+
+.offer__prices {
+  margin-bottom: 50px;
+}
+
+.offer__btn-wrapper{
+  text-align: center;
+}
+
+.news {
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-news {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.news__item {
+  height: 392px;
+  margin-right: 2%;
+  flex: 1;
+}
+
+.news__item:last-child {
+  margin-right: 0;
+}
+
+.single-news__cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .4;
+}
+
+.single-news__text-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px 30px;
+  min-height: 150px;
+}
+
+.single-news__date {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.single-news__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.pager--theme--light {
+  color: #202123;
+}
+
+.pager--theme--light .pager__item--active .pager__link {
+  color: #fff;
+  background: #353538;
+}
+
+.pager--theme--light .pager__link:hover {
+  color: #fff;
+  background: #353538;
+}
+
+.pager__display {
+  margin-right: 19px;
+}
+
+.pager__list {
+  display: flex;
+  align-items: center;
+}
+
+.pager__item {
+  text-align: center;
+}
+
+.pager__item--active .pager__link{
+  background: #353538;
+}
+
+.pager__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.pager__link:hover{
+background: #353538;
+}
+
+.about {
+  display: flex;
+}
+
+.about:before,.about__desc {
+  border-radius: 4px;
+}
+
+.about:before {
+  content: "";
+  width: 488px;
+  height: 502px;
+  background: url(./img/chess.jpg) center center / cover no-repeat;
+  display: block;
+}
+
+.about__desc {
+  background: #202123;
+  padding: 80px 98px;
+  max-width: 780px;
+  margin-left: -142px;
+  margin-top: 166px;
+}
+
+.about__title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about__desc-text {
+  margin-bottom: 42px;
+}
+
+.about__desc-text p {
+  margin-bottom: 20px;
+}
+
+.about__desc-text p:last-child{
+  margin-bottom: 0;
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+.footer-container__section {
+  margin-top: 12px;
+  height: 152px;
+}
+
+.footer-container__content {
+  border-top: 1px solid #353538;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+}
+
+.footer__col--align--right {
+  align-items: flex-end;
+}
+
+.socials {
+  margin-right: 74px;
+}
+
+.socials__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center no-repeat;
+}
+
+.socials__item--icon--telegram .socials__link {
+  background-image: url(./img/telegram.png);
+}
+
+.socials__item--icon--telegram .socials__link:hover {
+  background-image: url(./img/telegram-hover.png);
+}
+
+.socials__item--icon--vk .socials__link {
+  background-image: url(./img/vk.png);
+}
+
+.socials__item--icon--vk .socials__link:hover {
+  background-image: url(./img/vk-hover.png);
+}
+
+.socials__item--icon--fb .socials__link {
+  background-image: url(./img/facebook.png);
+}
+
+.socials__item--icon--fb .socials__link:hover {
+  background-image: url(./img/facebook-hover.png);
+}
+
+.socials__item--icon--insta .socials__link {
+  background-image: url(./img/instagram.png);
+}
+
+.socials__item--icon--insta .socials__link:hover {
+  background-image: url(./img/instagram-hover.png);
+}
+
+/* services page*/
+
+.top-line {
+  min-height: 415px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  background: #202123 url(./img/lion-head-wide.jpg) right 20% top no-repeat;
+}
+
+.top-line__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #999;
+  text-decoration: none;
+}
+
+.breadcrumbs__item:after {
+  content: "/";
+  color: #999;
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: #dfb56d;
+  font-size: 14px;
+}
+
+.page-content {
+  background: #fff;
+  color: #818181;
+  padding: 40px 0; 
+}
+
+.services {
+  margin-bottom: 65px; 
+}
+
+.service {
+  display: flex;
+  padding: 58px 43px;
+  text-decoration: none;
+}
+
+.service:hover {
+  background: #f4f5f5;
+}
+
+.service:hover .service__btn {
+  background: #dfb56d;
+}
+
+.service__img {
+  width: 30%;
+  margin-right: 7%;
+}
+
+.service__content {
+  flex: 1;
+}
+
+.service__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  color: #202123;
+}
+
+.service__desc {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.inner-section {
+  background: #fff;
+  color: #202123;
+  padding: 95px 0;
+}
+
+.inner-section--bg--grey {
+  background: #f4f5f5;
+}
+
+.inner-section__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 75px;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  margin-left: 46px;
+}
+
+.partners__item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
+.partners__link {
+  text-decoration: none;
+  display: flex;
+  width: 250px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+}
+
+.partners__link:hover {
+  filter: grayscale(0);
+}
+
+.inner-footer__container {
+  padding: 45px 0;
+}
+
+.inner-footer {
+  margin-top: auto;
+}
